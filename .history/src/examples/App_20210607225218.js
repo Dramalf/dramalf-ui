@@ -1,5 +1,5 @@
 import React from "react";
-import { AvatarShot } from "dramalf-ui";
+import { AvatarShot } from "../lib";
 const App = () => (
   <div style={{ width: 640, margin: "15px auto",color:"#e65" }}>
     <h1 >Example Display</h1>

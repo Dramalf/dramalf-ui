@@ -28,8 +28,8 @@ function AvatarShot() {
               video = document.querySelector("video");
               navigator.mediaDevices.getUserMedia({
                 video: {
-                  width: 360,
-                  height: 360
+                  width: 350,
+                  height: 350
                 },
                 audio: true
               }).then(function (stream) {
