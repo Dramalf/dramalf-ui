@@ -1,0 +1,42 @@
+#avatar {
+    height: 46px;
+    width: 46px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#shot {
+
+    z-index: 10;
+}
+
+#camerabox {
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 1px solid black;
+
+    overflow: hidden;
+
+}
+
+#camerabox video {
+    height: 100%;
+    margin: auto;
+    transform: rotateY(180deg);
+}
+
+#camerabox button {
+    position: relative;
+    bottom: 10%;
+    margin: 0 50% 0 50%;
+    z-index: 100;
+}

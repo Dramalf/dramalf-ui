@@ -1,0 +1,56 @@
+#avatar {
+    height: 46px;
+    width: 46px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#avatar img {
+    width: 100%;
+    transform: scale(1.25, 1.25);
+    transform: rotateY(180deg);
+    height: auto;
+}
+
+.hide {
+    display: none;
+}
+
+#shot {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+#camerabox {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+#camerabox video {
+    height: 100%;
+    margin: auto;
+    transform: rotateY(180deg);
+}
+
+#camerabox button {
+    position: absolute;
+    margin-top: 20px;
+    left: 200px;
+    z-index: 100;
+}

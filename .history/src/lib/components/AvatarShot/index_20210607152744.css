@@ -1,0 +1,30 @@
+.avatar {
+    height: 46px;
+    width: 46px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 46px;
+}
+
+#camerabox {
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    marigin: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+#camerabox video {
+    display: inline-block;
+    height: 100%;
+    margin: auto;
+    transform: rotateY(180deg);
+}

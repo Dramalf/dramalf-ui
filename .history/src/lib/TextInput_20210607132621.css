@@ -1,0 +1,60 @@
+Creating a Library of React Components using Create React App April 9th 2020 63,
+210 reads 21 Aakash N S Hacker Noon profile picture @aakashns Aakash N S Twitter social icon UPDATE: You can use the npm package create-component-lib to automate all the steps described in this blog post. create-component-lib Create React App is easily the best tool for creating and developing React applications. With a little bit of work,
+it can also be used to create a library of React components that can be published to npm and used in other React applications. Here's what you need to do:
+
+1. Create a new project using create-react-app: create-react-app simple-component-library 2. Delete all the files inside src/,
+and create a new index.js file with some starter code: import React from "react";
+import ReactDOM from "react-dom";
+
+ReactDOM.render(<div>Hello world</div>, document.getElementById("root"));
+
+3. Create a new folder src/lib and place your React components inside it. src/lib will serve as the root folder of the module published to npm . Here’s the code for an example component: import React from "react";
+import "./TextInput.css";
+
+const TextInput=( {
+        type="text", label, value, onChange
+    }
+
+)=>(<div className="simple-form-group"> {
+        label && <label className="simple-text-label"> {
+            label
+        }
+
+        </label>
+    }
+
+    <input type= {
+        type
+    }
+
+    className="simple-text-input"
+
+    value= {
+        value
+    }
+
+    onChange= {
+        e=> onChange && onChange(e.target.value)
+    }
+
+    /> </div>);
+
+export default TextInput;
+
+Styling can be done inline,
+or in separate CSS files: .simple-form-group {
+    margin-bottom: 1rem;
+}
+
+.simple-text-label {
+    display: block;
+    color: red;
+}
+
+.simple-text-input {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(33, 37, 41);
+}

@@ -1,0 +1,70 @@
+#avatar {
+    height: 46px;
+    width: 46px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#avatar img {
+    width: 100%;
+    transform: scale(1.25, 1.25);
+    transform: rotateY(180deg);
+    height: auto;
+}
+
+.hide {
+    display: none;
+}
+
+#shot {
+    position: fixed;
+    height: 460px;
+    background: #e3e4e5;
+    padding: 10px;
+    border-radius: 10%;
+    top: 20%;
+    left: 36%;
+    z-index: 10;
+}
+
+#camerabox {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+#camerabox video {
+    height: 100%;
+    margin: auto;
+    transform: rotateY(180deg);
+}
+
+
+
+.bt {
+    padding: 6px 8px;
+    font-size: 24px;
+    border-radius: 20%;
+    border: 2px solid burlywood;
+    background: rgb(212, 196, 180);
+    box-shadow: burlywood;
+    z-index: 100;
+}
+
+.bt1 {
+    float: left;
+}
+
+.bt2 {
+    float: right;
+}

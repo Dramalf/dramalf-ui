@@ -1,0 +1,21 @@
+.avatar {
+    height: 46px;
+    width: 46px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 46px;
+}
+
+#camerabox {
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    left: 50%;
+    top: 30%;
+}
+
+.camerabox video {
+    object-fit: fill;
+    transform: rotateY(180deg);
+}
