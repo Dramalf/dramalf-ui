@@ -1,5 +1,5 @@
 # dramalf-ui 
-### designed by Dramalf，an interest driven react-ui-component
+### designed by Dramalf，an interest driven react-ui-lib
 #### install:
 `npm i dramalf-ui`
 #### example: 
